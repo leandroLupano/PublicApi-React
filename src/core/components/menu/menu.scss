@@ -1,0 +1,70 @@
+.menu {
+  display: none;
+  font-size: 1rem;
+  background: inherit;
+  box-shadow: rgba(21, 127, 0, 0.4) 0px 5px, rgba(21, 127, 0, 0.3) 0px 10px,
+    rgba(21, 127, 0, 0.2) 0px 15px, rgba(21, 127, 0, 0.1) 0px 20px,
+    rgba(21, 127, 0, 0.05) 0px 25px;
+}
+
+.burgerImg {
+  width: 50px;
+  height: 50px;
+}
+
+.menu-container:hover {
+  .menu {
+    display: block;
+    color: rgb(94, 127, 66);
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .menu-container:hover {
+    .menu {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  .menu {
+    background: none;
+    box-shadow: none;
+    font-size: 1.5rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    font-weight: normal;
+
+    li:active {
+      color: white;
+      background-color: rgb(94, 127, 66);
+      border-radius: 1rem;
+      font-weight: normal;
+    }
+    li:hover {
+      color: white;
+      background-color: rgb(76, 175, 80);
+      border-radius: 1rem;
+      font-weight: normal;
+      padding: 0.3rem 0.8rem;
+    }
+  }
+  .burgerImg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .menu {
+    gap: 3rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menu {
+    gap: 4rem;
+    padding-right: 3rem;
+  }
+}
