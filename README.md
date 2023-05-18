@@ -1,4 +1,4 @@
-# Week 5 - Proyecto en equipo
+# Proyecto Beer City
 
 ## Consignas:
 
